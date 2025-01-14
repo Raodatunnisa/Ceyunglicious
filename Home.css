@@ -1,0 +1,97 @@
+.navbar, .recipe-item p, footer, button, .awal, .search-bar {
+    font-family: 'Poppins', sans-serif;
+  }
+  .nav-item .nav-link:hover {
+    color: rgb(252, 142, 160) !important;
+  }
+  .navbar {
+    padding: 10px;
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  .dropdown-menu .dropdown-item{
+    font-weight: 430;
+  }
+  .dropdown-menu .dropdown-item:hover {
+    background-color: pink;
+    color: black; 
+  }
+  .awal{
+    font-weight: 500;
+    color: black;
+  }
+  .search-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: silver;
+    border-radius: 39px;
+    width: 500px;
+    height: 50px;
+  }
+  .search-bar input {
+    border: none;
+    background: none;
+    width: 100%;
+    outline: none;
+    cursor: text;
+    padding-left: 20px;
+    height: 50px;
+  }
+  .search-bar input::placeholder {
+    color: black;
+  }
+  .search-bar button {
+    background-color: pink;
+    border: none;
+    border-radius: 46%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+  }
+  .search-bar button img {
+    height: 45px;
+  }
+  .recipe-item img:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+  }
+  .recipe-item img:active {
+    transform: translateY(-5px) scale(0.98); 
+  }
+  .recipe-item{
+    color: black;
+    font-weight: 550;
+  }
+  .recipe-item img{
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  footer {
+    background-color: rgb(249, 200, 200);
+    text-align: center;
+    padding: 10px;
+    padding-top: 30px;
+    color: black;
+    font-weight: bold;  
+    font-size: 14px;
+  }
+  .image-container {
+    position: relative;
+  }
+  
+  .container .hero-image {
+    position: absolute;
+    top: 85px;
+    left: 500px;
+  }

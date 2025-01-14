@@ -1,0 +1,113 @@
+.container, button {
+    font-family: 'poppins', sans-serif;
+}
+.nav-item .nav-link:hover {
+    color: rgb(252, 142, 160) !important;
+}
+.navbar {
+    padding: 10px;
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    z-index: 1030; 
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.dropdown-menu .dropdown-item{
+    font-weight: 430;
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color: pink;
+    color: black; 
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bold;
+}
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: black;   
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    height: 45px;
+    border: 1px solid black;
+}
+.search-bar input {
+    border: none;
+    background: none;
+    width: 100%;
+    outline: none;
+    cursor: text;
+    padding-left: 20px;
+    height: 500px;
+}
+.search-bar input::placeholder {
+    color: black;
+}
+.search-bar button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+.search-bar button img {
+    height: 28px;
+}
+.card {
+    text-align: center;
+    overflow: hidden;
+    align-items: center; 
+    justify-content: center; 
+    height: 100%; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.card-title{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+.card-img{
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+}
+.card-img-top{
+    width: 150px;
+    height: 170px;
+}
+.icon {
+    font-size: 15px;
+    color: black;
+    justify-content: center;
+}
+footer {
+    background-color: #f9c8c8;
+    text-align: center;
+    padding: 10px;
+    padding-top: 30px;
+    color: black;
+    font-weight: bold;  
+    font-size: 14px;
+}
