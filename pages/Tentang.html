@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceyunglicious</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;450;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: lavenderblush;
+            color: #000000;
+            font-weight: 450;
+        }
+        .nav-item .nav-link:hover {
+            color: rgb(252, 142, 160) !important;
+        }
+        .navbar {
+            padding: 10px;
+            font-weight: 500;
+            position: sticky;
+            top: 0;
+            z-index: 1030;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .hero-image {
+            width: 100%;
+            object-fit: cover; 
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+        h1 {
+            color: #000;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        h5{
+            font-weight: 600;
+        }
+        p {
+            line-height: 1.8;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .text-danger {
+            color: #ff5858 !important;
+        }
+        .text-danger:hover {
+            color: #e63939 !important;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            padding-top: 30px;
+            color: black;
+            font-weight: bold;  
+        }
+            @media (max-width: 768px) {
+        .row {
+            flex-direction: column-reverse;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar sticky-top">
+        <div class="container">
+        <img src="img/Cuplikan_layar_2024-12-08_143044-removebg-preview.png" alt="Bootstrap" width="140" height="60">
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link text-black" aria-current="page" href="Home.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-black dropdown-toggle" href="kategorii.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kategori</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Resep Ayam</a></li>
+                    <li><a class="dropdown-item" href="#">Resep Daging</a></li>
+                    <li><a class="dropdown-item" href="#">Resep Ikan</a></li>
+                    <li><a class="dropdown-item" href="#">Resep Sayuran</a></li>
+                    <li><a class="dropdown-item" href="#">Minuman</a></li>
+                    <li><a class="dropdown-item" href="#">Deesert</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="">Tips Memasak</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="">Tentang Kami</a>
+              </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <div class="text-center mb-4">
+                <h1 class="img-fluid hero-image">HELLO SAHABAT CEYUNGLICIOUS</h1>
+            </div>
+            <div class="col-md-6">
+                <p class="p2">Selamat datang di Ceyunglicious, rumah bagi para pecinta masakan dari berbagai belahan dunia!</p>
+                <p>Kami percaya bahwa memasak bukan hanya tentang mengolah bahan menjadi makanan, tetapi juga tentang menciptakan momen kebahagiaan bersama keluarga dan orang-orang tercinta.</p>
+                <p>Mari bergabung dengan jutaan pengguna lainnya yang telah menemukan semangat memasak di dapur bersama Ceyunglicious. Baik Anda seorang koki berpengalaman atau seseorang yang baru belajar memasak, kami ada di sini untuk membantu Anda menciptakan kelezatan di setiap hidangan.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <h1 class="img-fluid rounded"><img src="img.kategori/Bing_Image_Creator-removebg-preview.png" alt=""></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mission Section -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Misi Kami</h5>
+                <ul>
+                    <li>Misi kami adalah untuk menghadirkan inspirasi memasak yang mudah, lezat, dan terjangkau bagi semua orang. Dengan berbagai pilihan resep dari hidangan tradisional hingga modern, kami ingin membantu Anda menemukan kegembiraan dalam setiap langkah memasak.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h5>Apa yang Kami Tawarkan?</h5>
+                <ul>
+                    <li>Kami menyediakan ribuan resep masakan yang teruji, lengkap dengan bahan, langkah-langkah, dan tips memasak.</li>
+                    <li>Dari resep olahan daging, ikan, deesert, hingga minuman, Anda akan menemukan sesuatu yang cocok untuk setiap kesempatan.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <h1>IKUTI KAMI UNTUK RESEP TERBARU</h1>
+        <div class="social-icons">
+            <a href="#" class="text-danger"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-danger"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="text-danger"><i class="bi bi-tiktok"></i></a>
+        </div>
+        
+        <footer>
+            <div class="container">
+              <p>copyright © 2024 ceyunglicious | follow us on instagram, youtube, tiktok</p>
+            </div>
+          </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</body>
+</html>
