@@ -11,7 +11,6 @@
             font-family: 'Poppins', sans-serif;
             background-color: lavenderblush;
             color: #000000;
-            font-weight: 450;
         }
         .nav-item .nav-link:hover {
             color: rgb(252, 142, 160) !important;
@@ -24,6 +23,13 @@
             z-index: 1030;
             background-color: white;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .dropdown-menu .dropdown-item{
+            font-weight: 430;
+        }
+        .dropdown-menu .dropdown-item:hover {
+            background-color: pink;
+            color: black; 
         }
         .hero-image {
             width: 100%;
@@ -56,12 +62,37 @@
             color: #e63939 !important;
             text-decoration: none;
         }
+        .footer-top {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .footer-top h6 {
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .footer-icons a {
+            margin: 0 10px;
+            display: inline-block;
+            transition: transform 0.2s ease-in-out;
+            text-align: center;
+        }
+        .footer-icons a:hover {
+            transform: translateY(-5px);
+        }
+        .footer-icons span {
+            display: block;
+            margin-top: 5px;
+            font-size: 15px;
+            color: #000;
+        }
         footer {
+            background-color: rgb(249, 200, 200);
             text-align: center;
             padding: 10px;
             padding-top: 30px;
             color: black;
             font-weight: bold;  
+            font-size: 14px;
         }
             @media (max-width: 768px) {
         .row {
@@ -77,30 +108,31 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar sticky-top">
+    <nav class="navbar mb-3 sticky-top">
         <div class="container">
         <img src="/img/Cuplikan_layar_2024-12-08_143044-removebg-preview.png" alt="Bootstrap" width="140" height="60">
             <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link text-black" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link text-black dropdown-toggle" href="/pages/kategorii.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kategori</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="ayam.html">Resep Ayam</a></li>
-                        <li><a class="dropdown-item" href="daging.html">Resep Daging</a></li>
-                        <li><a class="dropdown-item" href="ikan.html">Resep Ikan</a></li>
-                        <li><a class="dropdown-item" href="sayur.html">Resep Sayuran</a></li>
-                        <li><a class="dropdown-item" href="minuman.html">Minuman</a></li>
-                        <li><a class="dropdown-item" href="deesert.html">Deesert</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-black" href="/pages/tips.html">Tips Memasak</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-black" href="/pages/Tentang.html">Tentang Kami</a>
-                  </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-black dropdown-toggle" href="/pages/kategorii.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kategori</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/pages/kategorii.html">Kategori</a></li>
+                    <li><a class="dropdown-item" href="ayam.html">Resep Ayam</a></li>
+                    <li><a class="dropdown-item" href="daging.html">Resep Daging</a></li>
+                    <li><a class="dropdown-item" href="ikan.html">Resep Ikan</a></li>
+                    <li><a class="dropdown-item" href="sayur.html">Resep Sayuran</a></li>
+                    <li><a class="dropdown-item" href="minuman.html">Minuman</a></li>
+                    <li><a class="dropdown-item" href="deesert.html">Deesert</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="/pages/tips.html">Tips Memasak</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="/pages/Tentang.html">Tentang Kami</a>
+              </li>
             </ul>
         </div>
     </nav>
@@ -141,23 +173,28 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer text-center">
-        <h1>IKUTI KAMI UNTUK RESEP TERBARU</h1>
-        <div class="social-icons">
-            <a href="#" class="text-danger"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="text-danger"><i class="bi bi-youtube"></i></a>
-            <a href="#" class="text-danger"><i class="bi bi-tiktok"></i></a>
+    <div class="footer-top">
+        <h6>IKUTI KAMI UNTUK SETIAP RESEP TERBARU</h6>
+        <div class="mb-4 footer-icons">
+            <a href="#" class="text-decoration-none">
+                <img src="/img.kategori/Round_Instagram_Logo_Photos_Social_Media-removebg-preview.png" alt="Instagram" width="60px" height="60px">
+                <span>Instagram</span>
+            </a>
+            <a href="#" class="text-decoration-none">
+                <img src="/img.kategori/Download_Youtube_logo_png__youtube_icon_transparent-removebg-preview.png" alt="YouTube" width="60px" height="60px">
+                <span>YouTube</span>
+            </a>
+            <a href="#" class="text-decoration-none">
+                <img src="/img.kategori/TIKTOK_PNG___LOGO_TIKTOK___SIN_FONDO_By__livtorresec-removebg-preview.png" alt="TikTok" width="60px" height="60px">
+                <span>TikTok</span>
+            </a>
         </div>
         
-        <footer>
-            <div class="container">
-              <p>copyright © 2024 ceyunglicious | follow us on instagram, youtube, tiktok</p>
-            </div>
-          </footer>
-
+    <footer>
+        <div class="container">
+            <p>copyright © 2024 ceyunglicious | follow us on instagram, youtube, tiktok</p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </body>
 </html>
