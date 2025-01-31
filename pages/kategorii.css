@@ -56,16 +56,13 @@
   .category {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 500;
   }
 .categories {
     display: flex;
     justify-content: center;
     gap: 70px;
     flex-wrap: wrap;
-}
-.category {
-    text-align: center;
-    font-weight: 500;
 }
 .category img {
     width: 70px;
